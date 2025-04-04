@@ -158,3 +158,34 @@ Opens the player's authorization dialog. It performs an authorization check befo
 
 For more information check [official site](https://yandex.ru/dev/games/doc/en/sdk/sdk-player)
 Sorry for may bad english, If you see some mistake in readme, you can contribute to fix it. I will be appreciate you.
+
+
+### Call `GameReady`
+
+```gdscript
+YandexSDK.game_ready() -> void`
+```
+
+Calls `GameReady` - shows at what moment player can start playing
+
+For more information check [topic `GameReady` on official website](https://yandex.ru/dev/games/doc/ru/requirements/1/19#gameready).
+
+### Call `GameplayStarted` 
+
+```gdscript
+YandexSDK.gameplay_started() -> void`
+```
+
+Calls `GameplayStarted` - should be called at moment when gameplay starts (loading ended, game unpaused, etc). 
+
+For more information check [topic `GameplayStart` on official website](https://yandex.ru/dev/games/doc/ru/sdk/sdk-game-events#ysdkfeaturesgameplayapistart).
+
+### Call `GameplayStopped` 
+
+```gdscript
+YandexSDK.gameplay_stopped() -> void`
+```
+
+Calls `GameplayStopped` - should be called at moments when gameplay stops (game menu, pause, animations, cutscenes, etc). 
+
+For more information check [topic `GameplayStop` on official website](https://yandex.ru/dev/games/doc/ru/sdk/sdk-game-events#ysdkfeaturesgameplayapistop).

@@ -159,3 +159,34 @@ YandexSDK.open_auth_dialog() -> void`
 Открывает окно авторизации игрока. Перед открытием окна выполняет проверку авторизации.
 
 Больше информации можно найти на [официальном сайте](https://yandex.ru/dev/games/doc/en/sdk/sdk-player).
+
+### Вызвать `GameReady`
+
+```gdscript
+YandexSDK.game_ready() -> void`
+```
+
+Вызывает `GameReady` - показывает в какой момент пользователь может приступить к игре
+
+Больше информации можно найти на [официальном сайте в разделе `GameReady`](https://yandex.ru/dev/games/doc/ru/requirements/1/19#gameready).
+
+### Вызвать `GameplayStarted` 
+
+```gdscript
+YandexSDK.gameplay_started() -> void`
+```
+
+Вызывает `GameplayStarted` - следует вызывать в момент, в который начинается геймплей (конец загрузги, закрытие паузы и т.д) 
+
+Больше информации можно найти на [официальном сайте в разделе `GameplayStarted`](https://yandex.ru/dev/games/doc/ru/sdk/sdk-game-events#ysdkfeaturesgameplayapistart).
+
+
+### Вызвать `GameplayStopped` 
+
+```gdscript
+YandexSDK.gameplay_stopped() -> void`
+```
+
+Вызывает `GameplayStopped` - следует вызывать в момент, который не является геймплейным (игровое меню, пауза, анимации, катсцены и т.д) 
+
+Больше информации можно найти на [официальном сайте в разделе `GameplayStopped`](https://yandex.ru/dev/games/doc/ru/sdk/sdk-game-events#ysdkfeaturesgameplayapistop).
